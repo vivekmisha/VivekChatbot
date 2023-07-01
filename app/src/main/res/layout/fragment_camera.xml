@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.camera.CameraFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/llbg"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintTop_toTopOf="@id/container"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="10dp"
+            >
+            <ImageView
+                android:id="@+id/mprofile"
+                android:layout_width="@dimen/icon_size_big"
+                android:layout_height="@dimen/icon_size_big"
+                android:src="@drawable/person"
+                />
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/llbg"
+            app:layout_constraintStart_toEndOf="@id/ll1"
+            app:layout_constraintTop_toTopOf="@id/ll1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginStart="30dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/search"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:id="@+id/recordText"
+            app:layout_constraintStart_toEndOf="@id/ll2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            />
+
+        <ImageView
+            android:id="@id/img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/llbg"
+            android:padding="8dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/person_add"
+            app:layout_constraintTop_toTopOf="@id/ll2"
+            app:layout_constraintStart_toEndOf="@id/ll2"
+            app:layout_constraintEnd_toEndOf="@id/layout2"
+
+
+
+            />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout2"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintTop_toTopOf="@id/ll1"
+            android:background="@drawable/llbg"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/flipCameraButton"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/baseline_cameraswitch_24" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/auto_fix" />
+
+            <ImageView
+                android:id="@+id/videoCall"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/videocall" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/music" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/add_sign" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layout2"
+            android:background="@drawable/llbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/icon_size_big"
+                android:layout_height="@dimen/icon_size_big"
+                android:src="@drawable/filter_center" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/camerabtn"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onImageClick"
+            android:src="@drawable/circle"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintBottom_toBottomOf="@id/container"/>
+
+        <ImageView
+            android:id="@+id/recordButton"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onImageClick"
+            app:layout_constraintTop_toTopOf="@id/camerabtn"
+            android:src="@drawable/circle"
+            app:layout_constraintStart_toEndOf="@id/camerabtn"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            />
+
+        <ImageView
+            android:id="@+id/capturedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

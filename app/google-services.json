@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "195013354777",
+    "project_id": "vivek-chatbot-86c4e",
+    "storage_bucket": "vivek-chatbot-86c4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195013354777:android:d6d3ef10ca99406ac51188",
+        "android_client_info": {
+          "package_name": "com.example.vivekchatbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoxL5bjTZzke4Yy-msan6aAaoaryNj9K4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

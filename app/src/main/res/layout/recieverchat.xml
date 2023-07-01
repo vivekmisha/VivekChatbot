@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start"
+    android:padding="8dp">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        Padding="5dp"
+
+        android:background="@drawable/background_recciever_bubble"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/receiver_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Morning"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/receiver_message_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:gravity="bottom"
+            android:text="9:00"
+
+            android:textColor="#514B4B" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

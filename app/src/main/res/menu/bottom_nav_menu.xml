@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_location"
+        android:icon="@drawable/location_icon"
+        android:title="@string/location"
+        />
+
+    <item
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/baseline_camera_24"
+        android:title="@string/title_camera"
+        />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/baseline_chat_bubble_outline_24"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/outline_saved_search_24"
+        android:title="@string/search" />
+<!--    <item-->
+<!--        android:id="@+id/navigation_people"-->
+<!--        android:icon="@drawable/baseline_people_24"-->
+<!--        android:title="people"/>-->
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/gallery_24"
+        android:title="gallery"/>
+
+
+</menu>

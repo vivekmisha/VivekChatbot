@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_camera">
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.example.vivekchatbot.ui.camera.CameraFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.vivekchatbot.ui.chat.ChatFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_user_to_user_chat"
+            app:destination="@id/chattingScreenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="com.example.vivekchatbot.ui.map.MapsFragment"
+        android:label="activity_location"
+        tools:layout="@layout/fragment_maps" />
+    <activity
+        android:id="@+id/navigation_search"
+        android:name="com.example.vivekchatbot.ui.TabFragment.SearchActivity"
+        android:label="gallery"
+        tools:layout="@layout/activity_search" />
+
+
+    <fragment
+        android:id="@+id/chattingScreenFragment"
+        android:name="com.example.vivekchatbot.ui.chatting_ui.ChattingScreenFragment"
+        android:label="fragment_chatting_screen"
+        tools:layout="@layout/fragment_chatting_screen" />
+    <activity
+        android:id="@+id/navigation_gallery"
+        android:name="com.example.vivekchatbot.ui.gallery.GalleryActivity"
+        android:label="gallery"
+        tools:layout="@layout/activity_gallery" />
+
+
+</navigation>
